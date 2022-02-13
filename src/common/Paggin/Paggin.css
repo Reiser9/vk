@@ -1,0 +1,23 @@
+.paggination{
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.paggin__item{
+	padding: 0.5rem;
+	width: 25px;
+	height: 25px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	border: 1px solid #007eee;
+	margin: 0.5rem;
+	color: #007eee;
+	cursor: pointer;
+	transition: .2s linear;
+}
+
+.paggin__item:hover, .paggin__item.active{
+	background: #007eee;
+	color: #fff;
+}

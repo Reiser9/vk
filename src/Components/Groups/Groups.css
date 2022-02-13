@@ -1,0 +1,28 @@
+.paggination{
+	width: 100%;
+	margin-top: 1rem;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.paggination__item{
+	width: 35px;
+	height: 35px;
+	color: #fff;
+	background: #0077ff;
+	border: 1px solid #0077ff;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	cursor: pointer;
+	border-radius: 50%;
+	margin: .5rem;
+	transition: .2s linear;
+}
+
+.paggination__item.active{
+	border: 1px solid #0077ff;
+	background: #fff;
+	color: #0077ff;
+}

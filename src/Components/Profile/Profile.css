@@ -1,0 +1,28 @@
+.profile__inner{
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	margin-top: 4rem;
+}
+
+.profile__text{
+	margin-bottom: 1rem;
+	text-align: center;
+	word-break: break-all;
+}
+
+.profile__img--inner{
+	width: 70px;
+	height: 70px;
+	border-radius: 50%;
+	overflow: hidden;
+	margin-bottom: 1rem;
+	display: flex;
+}
+
+.profile__img{
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}

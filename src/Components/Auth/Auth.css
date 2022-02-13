@@ -1,0 +1,17 @@
+.auth__inner{
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.auth__button{
+	padding: 1.2rem 4rem;
+	background: #0077ff;
+	color: #fff;
+	border-radius: 10px;
+}
+
+.auth__button:hover{
+	background: #0055ff;
+}
