@@ -1,16 +1,11 @@
 import React from 'react';
-import Auth from './Components/Auth/Auth.jsx';
 import VK from 'vk-openapi';
-import {Routes, Route} from 'react-router-dom';
-
-import Profile from './Components/Profile/Profile.jsx';
-import Main from './Components/Main/Main.jsx';
-import Status from './Components/Status/Status.jsx';
-import Friends from './Components/Friends/Friends.jsx';
-import Groups from './Components/Groups/Groups.jsx';
-import Wall from './Components/Wall/Wall.jsx';
+import {Layout, Typography, Image} from 'antd';
 
 import './App.css';
+
+const {Header, Content} = Layout;
+const {Text} = Typography;
 
 const App = () => {
     const [authState, setAuthState] = React.useState(false);
@@ -62,22 +57,13 @@ const App = () => {
     }
 
     return (
-        <div className="content">
-            <div className="container">
-                <div className="content__inner">
-                    <Auth authState={authState} fail={fail} load={load} auth={auth} />
-
-                    <Routes>
-                        <Route exact path="/" element={<Main />} />
-                        <Route exact path="/profile" element={<Profile load={load} logout={logout} authState={authState} />} />
-                        <Route exact path="/status" element={<Status load={load} authState={authState} />} />
-                        <Route exact path="/friends" element={<Friends load={load} authState={authState} />} />
-                        <Route exact path="/wall" element={<Wall load={load} authState={authState} />} />
-                        <Route exact path="/groups" element={<Groups load={load} authState={authState} />} />
-                    </Routes>
+        <header className='header'>
+            <div className='container'>
+                <div className='header__inner w100 df aic jcsb'>
+                    
                 </div>
             </div>
-        </div>
+        </header>
     );
 }
 
